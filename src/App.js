@@ -61,6 +61,7 @@ export default function App() {
   };
 
   const endGame = () => {
+    setTypedText((prev) => prev + inputText);
     setScore(typedText.length / 5);
     setDisableInput(true);
     setInputText("");
